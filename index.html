@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Notes</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <script src="moment.min.js"defer></script>
+  <script src="script.js"defer></script>
+  <title>To-Do Pad</title>
 </head>
 <body>
-  
+  <div class="roboto pa4">
+    <h1 class="f3 f2-m f1-l fw2 black-90 mv3">To-Do List<h1>
+      <form id="entry-form" class="pv4">
+  <div class="form-field" >   
+        <input id="entry-text" type="text" class="pa3 w-50 measure" value="" placeholder="Enter Today's To-Do" required>
+      </div> 
+  <div class="form-field">
+    <button id="entry-button" type="submit" class="mt3 f6 mb2 pv2 ph2 dib dark-grey bg-light-green">submit</button>
+    <button id="entry-button" type="reset" class="mt3 f6 mb2 pv2 ph2 dib dark-grey bg-light-green">reset</button>
+  </div>
+  <section id="entry" class="pa4">
+    <ul id="entry-list" class="list p10 measure"></ul>
+  </section>
+      </form>
+  </div>
 </body>
 </html>
